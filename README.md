@@ -1,1 +1,1 @@
-# goit-fe-courses
+# goit-fe-course
