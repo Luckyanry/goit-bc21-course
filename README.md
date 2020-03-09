@@ -1,1 +1,1 @@
-# goit-bc21-courses
+# goit-fe-courses
