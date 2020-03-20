@@ -20,7 +20,7 @@ img {
 }
 
 .page-header {
-    margin-bottom: 94px;
+    margin-bottom: 95px;
 }
 
 .page-nav {
@@ -48,7 +48,7 @@ img {
 }
 
 .site-navigation li:first-child {
-    margin-right: 121px;
+    margin-right: 120px;
 }
 
 .site-navigation li:nth-child(2) {
@@ -102,7 +102,7 @@ img {
 }
 
 .catalog-list-image {
-    margin-bottom: 30px;
+    margin-bottom: 29px;
 }
 
 h2 {
@@ -110,14 +110,14 @@ h2 {
     font-size: 14px;
     line-height: 17px;
     color: #b4ad9e;
-    margin: 0 0 32px 0;
+    margin: 0 0 19px 0;
     text-transform: uppercase;
 }
 
 .catalog-list-title {
     font-size: 30px;
     line-height: 36px;
-    margin: 0 0 36px 0;
+    margin: 0 0 29px 0;
 }
 
 .catalog-list-about {
@@ -130,7 +130,7 @@ h2 {
     display: block;
     border: 2px solid rgb(98, 98, 98);
     margin: 0 auto;
-    margin-right: 358px;
+    margin-right: 379px;
     padding: 16px 32px;
     font-size: 20px;
     line-height: 24px;
