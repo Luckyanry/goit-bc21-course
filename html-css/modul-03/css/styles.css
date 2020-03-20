@@ -32,10 +32,6 @@ img {
     margin: 0 auto;
 }
 
-.catalog {
-    margin-bottom: 70px;
-}
-
 .site-navigation {
     display: inline-block;
     margin: 0;
@@ -78,6 +74,10 @@ img {
 .site-navigation a:hover,
 .site-navigation a:focus {
     color: #03a9f4;
+}
+
+.catalog {
+    margin-bottom: 70px;
 }
 
 .catalog-list {
