@@ -11,13 +11,273 @@ html {
 body {
     font-family: 'Roboto', sans-serif;
     color: #555252;
+    font-weight: 900;
 }
-
-
-/*font-family: 'Open Sans', sans-serif;*/
 
 img {
     display: block;
     max-width: 100%;
     height: auto;
 }
+
+.clearfix::after {
+    display: table;
+    content: '';
+    clear: both;
+}
+
+.container {
+    width: 1110px;
+    margin: 0 auto;
+}
+
+.page-header {
+    margin-bottom: 104px;
+}
+
+.page-nav {
+    padding-top: 34px;
+}
+
+.site-logo {
+    float: left;
+    margin: 0;
+    padding: 0;
+    font-size: 0;
+}
+
+.site-logo a {
+    color: #555252;
+    font-size: 30px;
+    font-weight: 300;
+    line-height: 32px;
+    list-style: none;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.site-logo::first-letter,
+.site-logo a:hover,
+.site-logo a:focus {
+    color: #1abc9c;
+    font-weight: 900;
+}
+
+.site-navigation {
+    float: right;
+    width: 478px;
+    margin: 0;
+    margin-top: 10px;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    list-style: none;
+}
+
+.site-navigation li {
+    float: left;
+}
+
+.site-navigation li:first-child {
+    margin-right: 34px;
+}
+
+.site-navigation li:nth-child(2) {
+    margin-right: 37px;
+}
+
+.site-navigation li:nth-child(3) {
+    margin-right: 30px;
+}
+
+.site-navigation li:nth-child(4) {
+    margin-right: 27px;
+}
+
+.site-navigation li:nth-child(5) {
+    margin-right: 34px;
+}
+
+.site-navigation li:last-child {
+    margin-right: 0;
+}
+
+.site-navigation a {
+    display: block;
+    color: #0f0101;
+    font-weight: 700;
+    line-height: 11px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.site-navigation a:hover,
+.site-navigation a:focus {
+    color: #1abc9c;
+}
+
+.gallery {
+    margin-bottom: 98px;
+}
+
+h2 {
+    margin: 0;
+    font-size: 48px;
+    font-weight: 900;
+    line-height: 32px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+h2::after {
+    content: '';
+    display: block;
+    margin: 0 auto;
+    margin-top: 32px;
+    width: 164px;
+    height: 7px;
+}
+
+.gallery-title {
+    color: #515151;
+    margin-bottom: 92px;
+}
+
+.gallery-title::after {
+    content: '';
+    background-color: #1abc9c;
+}
+
+.gallery-list {
+    margin: 0;
+    margin-bottom: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.gallery-list-item {
+    float: left;
+    width: 255px;
+}
+
+.gallery-list-item:not(:nth-child(4n)) {
+    margin-right: 30px;
+}
+
+.gallery-list-item:not(:nth-last-child(-n+4)) {
+    margin-bottom: 30px;
+}
+
+.gallery-list-image {}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+.gallery-list-title {
+    float: left;
+    background-color: rgb(188, 190, 190);
+    color: red;
+}
+
+.gallery-list-price {
+    float: right;
+    color: red;
+}
+
+.blog {
+    padding-bottom: 82px;
+}
+
+.blog-title {
+    margin-bottom: 80px;
+}
+
+.blog-title::after {
+    content: '';
+    background-color: #4ec6ab;
+}
+
+.blog-list {
+    font-family: 'Open Sans', sans-serif;
+    line-height: 26px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.blog-list-item {
+    float: left;
+    width: 350px;
+}
+
+.blog-list-item:not(:nth-child(3n)) {
+    margin-right: 30px;
+}
+
+.blog-list-image {
+    margin-bottom: 14px;
+}
+
+h3 {
+    margin: 0;
+    margin-bottom: 20px;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+h3::after {
+    content: '';
+    display: block;
+    margin-top: 11px;
+    width: 136px;
+    height: 3px;
+    background-color: #4ec6ab;
+}
+
+.blog-list-about {
+    margin-bottom: 15px;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.blog-list-button {
+    display: block;
+    border: 0;
+    border-radius: 3px;
+    margin: 0;
+    padding: 15px 43px;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 26px;
+    color: #ffffff;
+    background-color: #4ec6ab;
+    cursor: pointer;
+}
+
+.blog-list-button:hover,
+.blog-list-button:focus {
+    background-color: #7fd9c7;
+}
+
+
+/* 
+.load-button {
+    display: block;
+    border: 2px solid rgb(98, 98, 98);
+    margin: 0 auto;
+    margin-right: 379px;
+    padding: 16px 32px;
+    font-size: 20px;
+    line-height: 24px;
+    background-color: #ffffff;
+    font-weight: 400;
+    color: #626262;
+    cursor: pointer;
+}
+
+.load-button:hover,
+.load-button:focus {
+    color: #03a9f4;
+} */
