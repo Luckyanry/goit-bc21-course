@@ -33,7 +33,7 @@ img {
 }
 
 .page-header {
-    margin-bottom: 101px;
+    /* margin-bottom: 101px; */
 }
 
 .page-nav {
@@ -65,7 +65,7 @@ img {
 
 .site-navigation {
     float: right;
-    width: 466px;
+    min-width: 466px;
     margin: 0;
     margin-top: 10px;
     padding: 0;
@@ -120,8 +120,10 @@ img {
 
 /* GALLARY SECTION */
 
-.gallery {
-    margin-bottom: 107px;
+.section {
+    padding-top: 101px;
+    padding-bottom: 6px;
+    /* margin-bottom: 107px; */
 }
 
 h2 {
@@ -143,21 +145,18 @@ h2::after {
     height: 7px;
 }
 
-.gallery-title {
+.section-title {
     color: #515151;
-    margin-bottom: 92px;
-    margin-left: 21px;
+    margin-bottom: 91px;
 }
 
-.gallery-title::after {
+.section-title::after {
     content: '';
     background-color: #1abc9c;
-    margin-left: 452px;
 }
 
 .gallery-list {
     margin: 0;
-    margin-bottom: 0;
     padding: 0;
     list-style: none;
 }
@@ -217,18 +216,13 @@ h2::after {
 
 /* BLOG SECTION*/
 
-.blog {
+
+/* .blog {
     padding-bottom: 82px;
-}
+} */
 
 .blog-title {
-    margin-bottom: 80px;
-    margin-right: 9px;
-}
-
-.blog-title::after {
-    content: '';
-    background-color: #4ec6ab;
+    margin-bottom: 81px;
 }
 
 .blog-list {
@@ -249,11 +243,12 @@ h2::after {
 }
 
 .blog-list-image {
-    margin-bottom: 7px;
+    margin-bottom: 8px;
 }
 
 h3 {
-    margin: 0 9px 23px 0;
+    margin: 0;
+    margin-bottom: 23px;
     font-size: 18px;
     font-weight: 600;
     letter-spacing: -0.34px;
@@ -269,8 +264,7 @@ h3::after {
 }
 
 .blog-list-about {
-    margin: 0;
-    margin-bottom: 10px;
+    margin-bottom: 9px;
     font-size: 14px;
     font-weight: 400;
 }
