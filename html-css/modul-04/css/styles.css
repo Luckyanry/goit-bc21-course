@@ -32,10 +32,6 @@ img {
     margin: 0 auto;
 }
 
-.page-header {
-    /* margin-bottom: 101px; */
-}
-
 .page-nav {
     padding-top: 37px;
 }
@@ -123,7 +119,6 @@ img {
 .section {
     padding-top: 101px;
     padding-bottom: 6px;
-    /* margin-bottom: 107px; */
 }
 
 h2 {
@@ -216,10 +211,9 @@ h2::after {
 
 /* BLOG SECTION*/
 
-
-/* .blog {
+.blog {
     padding-bottom: 82px;
-} */
+}
 
 .blog-title {
     margin-bottom: 81px;
