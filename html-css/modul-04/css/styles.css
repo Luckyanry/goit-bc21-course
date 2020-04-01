@@ -129,6 +129,7 @@ h2 {
     line-height: 32px;
     text-align: center;
     text-transform: uppercase;
+    margin-bottom: 91px;
 }
 
 h2::after {
@@ -138,15 +139,6 @@ h2::after {
     margin-top: 32px;
     width: 164px;
     height: 7px;
-}
-
-.section-title {
-    color: #515151;
-    margin-bottom: 91px;
-}
-
-.section-title::after {
-    content: '';
     background-color: #1abc9c;
 }
 
@@ -173,12 +165,16 @@ h2::after {
     cursor: pointer;
 }
 
+div {
+    float: left;
+    background-color: #323232;
+}
+
 .gallery-list-title,
 .gallery-list-price {
     float: left;
-    height: 40px;
-    border: 0;
     margin: 0;
+    height: 40px;
     color: #ffffff;
     font-family: 'Roboto', sans-serif;
     font-size: 18px;
@@ -191,21 +187,16 @@ h2::after {
 .gallery-list-title {
     width: 201px;
     padding: 5px 0 0 13px;
-    background-color: #323232;
 }
 
 .gallery-list-price {
     width: 54px;
     padding: 5px 12px;
-    background-color: #8c8c8c;
+    background-color: rgba(255, 255, 255, 0.5);
 }
 
-.gallery-list-item:hover .gallery-list-title {
+.gallery-list-item:hover div {
     background-color: #1abc9c;
-}
-
-.gallery-list-item:hover .gallery-list-price {
-    background-color: #7fd9c7;
 }
 
 
@@ -213,10 +204,6 @@ h2::after {
 
 .blog {
     padding-bottom: 82px;
-}
-
-.blog-title {
-    margin-bottom: 81px;
 }
 
 .blog-list {
@@ -258,13 +245,14 @@ h3::after {
 }
 
 .blog-list-about {
+    margin: 0;
     margin-bottom: 9px;
     font-size: 14px;
     font-weight: 400;
 }
 
 .blog-list-button {
-    display: block;
+    display: inline-block;
     border: 0;
     border-radius: 3px;
     margin: 0;
@@ -274,6 +262,7 @@ h3::after {
     font-weight: 300;
     letter-spacing: -0.38px;
     line-height: 26px;
+    text-decoration: none;
     color: #ffffff;
     background-color: #4ec6ab;
     cursor: pointer;
