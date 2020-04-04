@@ -21,6 +21,13 @@ img {
     height: auto;
 }
 
+a {
+    display: block;
+    height: 100%;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
 .clearfix::after {
     display: table;
     content: '';
@@ -50,8 +57,6 @@ img {
     letter-spacing: -0.9px;
     line-height: 32px;
     list-style: none;
-    text-transform: uppercase;
-    text-decoration: none;
 }
 
 .site-logo::first-letter {
@@ -100,12 +105,9 @@ img {
 }
 
 .site-navigation a {
-    display: block;
     color: #0f0101;
     font-weight: 700;
     line-height: 11px;
-    text-transform: uppercase;
-    text-decoration: none;
 }
 
 .site-navigation a:hover,
@@ -251,7 +253,7 @@ h3::after {
     font-weight: 400;
 }
 
-.blog-list-button {
+.blog-list-link {
     display: inline-block;
     border: 0;
     border-radius: 3px;
@@ -268,7 +270,7 @@ h3::after {
     cursor: pointer;
 }
 
-.blog-list-button:hover,
-.blog-list-button:focus {
+.blog-list-link:hover,
+.blog-list-link:focus {
     background-color: #7fd9c7;
 }
