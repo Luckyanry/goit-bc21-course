@@ -147,7 +147,9 @@ a {
 .overlay-title {
     position: absolute;
     bottom: 50%;
-    left: 16%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 760px;
     margin: 0;
     font-size: 60px;
     font-weight: 900;
