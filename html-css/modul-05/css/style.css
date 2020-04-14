@@ -12,7 +12,6 @@ body {
     font-family: 'Roboto', sans-serif;
     color: #555252;
     font-weight: 900;
-    letter-spacing: -0.28px;
 }
 
 img {
@@ -46,17 +45,15 @@ a {
 .site-logo {
     float: left;
     margin: 0;
-    padding: 0;
-    font-size: 0;
 }
 
 .site-logo a {
-    color: #555252;
     font-size: 30px;
     font-weight: 300;
     letter-spacing: -0.9px;
     line-height: 32px;
     list-style: none;
+    color: #555252;
 }
 
 .site-logo::first-letter {
@@ -120,31 +117,26 @@ a {
 
 .slider {
     position: relative;
-    margin: 0 auto;
-    min-width: 1110px;
     height: 600px;
-    cursor: pointer;
-    background-color: #000002;
+    background-color: rgba(0, 0, 2);
 }
 
 .slider-image {
     position: absolute;
-    height: 600px;
     width: 100%;
+    height: 100%;
     object-fit: cover;
     opacity: 0.522;
 }
 
-.overlay {
+.slides {
     position: relative;
     height: 600px;
-    margin: 0 auto;
     text-transform: uppercase;
-    letter-spacing: -0.2px;
     cursor: pointer;
 }
 
-.overlay-title {
+.slides-title {
     position: absolute;
     bottom: 50%;
     left: 50%;
@@ -154,10 +146,11 @@ a {
     font-size: 60px;
     font-weight: 900;
     line-height: 82px;
+    letter-spacing: -1.2px;
     color: #ff7200;
 }
 
-.overlay-descr {
+.slides-descr {
     position: absolute;
     top: 100%;
     left: 0;
@@ -165,10 +158,11 @@ a {
     font-size: 24px;
     font-weight: 300;
     line-height: 54px;
+    letter-spacing: -0.48px;
     color: #ffffff;
 }
 
-.overlay-arrow {
+.slides-arrow {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -183,21 +177,19 @@ a {
     cursor: pointer;
 }
 
-.overlay-arrow-left {
+.slides-arrow-left {
     left: 0;
 }
 
-.overlay-arrow-right {
+.slides-arrow-right {
     right: 0;
 }
 
-.overlay-arrow:hover {
+.slides-arrow:hover {
     opacity: 1;
 }
 
-.slider:hover .slider-image,
-.slider:hover .overlay-title {
-    opacity: 1;
+.slider:hover .slides-title {
     color: #ffffff;
 }
 
@@ -213,8 +205,7 @@ h2 {
     margin: 0;
     margin-bottom: 80px;
     font-size: 48px;
-    font-weight: 900;
-    letter-spacing: -1px;
+    letter-spacing: -0.98px;
     line-height: 32px;
     text-align: center;
     text-transform: uppercase;
@@ -232,15 +223,19 @@ h2::after {
 }
 
 .collection-list {
-    position: relative;
     margin: 0;
     padding: 0;
     list-style: none;
 }
 
 .collection-list-item {
+    position: relative;
     float: left;
     width: 255px;
+}
+
+.collection-list-item a {
+    color: #ffffff;
 }
 
 .collection-list-item:not(:nth-child(4n)) {
@@ -251,13 +246,60 @@ h2::after {
     margin-bottom: 30px;
 }
 
+.overlay {
+    position: absolute;
+    width: 100%;
+    height: 283px;
+    background-color: rgb(0, 0, 0);
+    border: 10px solid rgb(255, 255, 255);
+    opacity: 0;
+    /* opacity: 0.5; */
+    cursor: pointer;
+}
+
+.overlay-icon {
+    padding-top: 79px;
+    padding-left: 35px;
+    margin: 0;
+    list-style: none;
+}
+
+.overlay-icon-button {
+    float: left;
+    padding: 0;
+    margin-right: 8px;
+    margin-bottom: 7px;
+    display: inline-block;
+    height: 50px;
+    width: 50px;
+    border: 1px solid #ffffff;
+    color: #ffffff;
+    background-color: rgb(0, 0, 0);
+    line-height: 15px;
+    vertical-align: middle;
+}
+
+.overlay-icon-text {
+    padding: 0 9px;
+    width: 166px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: -0.28px;
+    color: #fefefe;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    text-transform: uppercase;
+    vertical-align: middle;
+}
+
 .collection-list-image {
     cursor: pointer;
 }
 
 .collection-list-sale {
-    position: absolute;
-    transform: translateY(-100%);
+    float: left;
     height: 40px;
     background-color: #323232;
 }
@@ -269,7 +311,6 @@ h2::after {
     color: #ffffff;
     font-size: 18px;
     line-height: 32px;
-    text-transform: uppercase;
     cursor: pointer;
 }
 
@@ -286,6 +327,10 @@ h2::after {
 
 .collection-list-item:hover .collection-list-sale {
     background-color: #1abc9c;
+}
+
+.collection-list-item:hover .overlay {
+    opacity: 0.549;
 }
 
 
@@ -309,7 +354,9 @@ h2::after {
 }
 
 .footer-word {
+    display: inline;
     color: #46BFA9;
+    text-transform: none;
 }
 
 

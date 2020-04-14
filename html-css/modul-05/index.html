@@ -43,24 +43,25 @@
     </header>
     <main>
         <h1 class="visually-hidden">Our catalog of services</h1>
-        <section>
+        <section class="slider">
             <h2 class="visually-hidden">Tour guides section</h2>
-            <div class="slider">
-                <img class="slider-image" src="https://i.ibb.co/KNGsnNM/slider.jpg" alt="Image with four beautiful girls walking on the street in Paris" width="1600" height="600">
-                <div class="overlay container">
-                    <p class="overlay-title">Affordable Paris tours
-                        <span class="overlay-descr">City tours / Tour tickets / Tour guides</span>
-                    </p>
 
-                    <button class="overlay-arrow overlay-arrow-left">
-                        <span class="pe-7s-angle-left pe-5x"></span>
+            <img class="slider-image" src="https://i.ibb.co/KNGsnNM/slider.jpg" alt="Image with four beautiful girls walking on the street in Paris" width="1600" height="600">
+            <div class="slides container">
+                <p class="slides-title">Affordable Paris tours
+                    <span class="slides-descr">City tours / Tour tickets / Tour guides</span>
+                </p>
+
+                <button class="slides-arrow slides-arrow-left">
+                    <span class="pe-7s-angle-left pe-5x">
                         <span class="visually-hidden">Previus slider</span>
-                    </button>
-                    <button class="overlay-arrow overlay-arrow-right">
-                        <span class="pe-7s-angle-right pe-5x"></span>
+                    </span>
+                </button>
+                <button class="slides-arrow slides-arrow-right">
+                    <span class="pe-7s-angle-right pe-5x">
                         <span class="visually-hidden">Next slider</span>
-                    </button>
-                </div>
+                    </span>
+                </button>
             </div>
         </section>
         <section class="collection">
@@ -68,40 +69,86 @@
                 <h2>New Collection</h2>
                 <ul class="collection-list clearfix">
                     <li class="collection-list-item">
+                        <div class="overlay">
+                            <ul class="overlay-icon clearfix">
+                                <li class="overlay-icon-item">
+                                    <button class="overlay-icon-button">
+                                        <span class="pe-7s-like pe-2x">
+                                            <span class="visually-hidden">Like</span>
+                                        </span>
+                                    </button>
+                                </li>
+                                <li class="overlay-icon-item">
+                                    <button class="overlay-icon-button">
+                                        <span class="pe-7s-shuffle pe-2x">
+                                            <span class="visually-hidden">Shuffle</span>
+                                        </span>
+                                    </button>
+                                </li>
+                                <li class="overlay-icon-item">
+                                    <button class="overlay-icon-button">
+                                        <span class="pe-7s-clock pe-2x">
+                                            <span class="visually-hidden">Clock</span>
+                                        </span>
+                                    </button>
+                                </li>
+                                <li class="overlay-icon-item">
+                                    <button class="overlay-icon-button overlay-icon-text">
+                                        <span class="pe-7s-cart pe-2x">
+                                            <span class="overlay-icon-text">Add to cart</span>
+                                        </span>
+                                    </button>
+                                </li>
+                            </ul>
+                        </div>
+
                         <a href="#" target="_blank">
-                            <img class="collection-list-image" src="https://i.ibb.co/ZYZVhZ0/blue-tshirt.jpg" alt="Photo of man tshirt with cool print, color blue" width="255" height="322">
-                            <div class="collection-list-sale">
-                                <p class="collection-sale-title">Blue Tshirt</p>
+                            <img class="collection-list-image" src="https://i.ibb.co/MCpDG2c/blue-tshirt.jpg" alt="Photo of man tshirt with cool print, color blue" width="255" height="283">
+                        </a>
+
+                        <div class="collection-list-sale">
+                            <a href="#">
+                                <h3 class="collection-sale-title">Blue Tshir</h3>
                                 <p class="collection-sale-price">&#36;26</p>
-                            </div>
-                        </a>
+                            </a>
+                        </div>
+
                     </li>
                     <li class="collection-list-item">
                         <a href="#" target="_blank">
-                            <img class="collection-list-image" src="https://i.ibb.co/BZV1CfJ/woman-shirt.jpg" alt="Photo of style woman shirt" width="255" height="322">
-                            <div class="collection-list-sale">
-                                <p class="collection-sale-title">Woman Shirt</p>
+                            <img class="collection-list-image" src="https://i.ibb.co/52B8c5T/womam-shirt.jpg" alt="Photo of style woman shirt" width="255" height="283">
+                        </a>
+                        <div class="collection-list-sale">
+                            <a href="#">
+                                <h3 class="collection-sale-title">Woman Shirt</h3>
                                 <p class="collection-sale-price">&#36;31</p>
-                            </div>
-                        </a>
+                            </a>
+                        </div>
+
                     </li>
                     <li class="collection-list-item">
                         <a href="#" target="_blank">
-                            <img class="collection-list-image" src="https://i.ibb.co/4Y2YWy5/yellow-tshirt.jpg" alt="Photo of man tshirt, color yellow" width="255" height="322">
-                            <div class="collection-list-sale">
-                                <p class="collection-sale-title">Yellow Tshirt</p>
+                            <img class="collection-list-image" src="https://i.ibb.co/0nqz2Qy/yellow-tshirt.jpg" alt="Photo of man tshirt, color yellow" width="255" height="283">
+                        </a>
+                        <div class="collection-list-sale">
+                            <a href="#">
+                                <h3 class="collection-sale-title">Yellow Tshirt</h3>
                                 <p class="collection-sale-price">&#36;21</p>
-                            </div>
-                        </a>
+                            </a>
+                        </div>
+
                     </li>
                     <li class="collection-list-item">
                         <a href="#" target="_blank">
-                            <img class="collection-list-image" src="https://i.ibb.co/CwkKnpP/cool-lingerie.jpg" alt="Photo of cool woman lingerie" width="255" height="322">
-                            <div class="collection-list-sale">
-                                <p class="collection-sale-title">Cool lingerie</p>
-                                <p class="collection-sale-price">&#36;56</p>
-                            </div>
+                            <img class="collection-list-image" src="https://i.ibb.co/sgJtjsk/cool-lingerie.jpg" alt="Photo of cool woman lingerie" width="255" height="283">
                         </a>
+                        <div class="collection-list-sale">
+                            <a href="#">
+                                <h3 class="collection-sale-title">Cool lingerie</h3>
+                                <p class="collection-sale-price">&#36;56</p>
+                            </a>
+                        </div>
+
                     </li>
                 </ul>
             </div>
@@ -109,7 +156,7 @@
     </main>
     <footer class="footer">
         <div class="container">
-            <p class="footer-text">All Rights Reserved <span>&#169;</span> Dokan <span>&#124;</span> Designed <span class="footer-word">ThemenGraph</span></p>
+            <p class="footer-text">All Rights Reserved <span>&#169;</span> Dokan <span>&#124;</span> Designed <a class="footer-word" href="#">ThemenGraph</a></p>
         </div>
     </footer>
 </body>
