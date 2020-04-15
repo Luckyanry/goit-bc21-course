@@ -40,40 +40,39 @@
                 </ul>
             </div>
         </nav>
-    </header>
-    <main>
         <h1 class="visually-hidden">Our catalog of services</h1>
-        <section class="slider">
-            <h2 class="visually-hidden">Tour guides section</h2>
+    </header>
 
-            <img class="slider-image" src="https://i.ibb.co/KNGsnNM/slider.jpg" alt="Image with four beautiful girls walking on the street in Paris" width="1600" height="600">
-            <div class="slides container">
-                <p class="slides-title">Affordable Paris tours
-                    <span class="slides-descr">City tours / Tour tickets / Tour guides</span>
-                </p>
+    <div class="slider">
+        <h2 class="visually-hidden">Tour guides section</h2>
 
-                <button class="slides-arrow slides-arrow-left">
+        <img class="slider-image" src="https://i.ibb.co/KNGsnNM/slider.jpg" alt="Image with four beautiful girls walking on the street in Paris" width="1600" height="600">
+        <div class="slides container">
+            <h3 class="slides__title">Affordable Paris tours
+                <span class="slides__descr">City tours / Tour tickets / Tour guides</span>
+            </h3>
+
+            <button class="slides__arrow slides__arrow-left">
                     <span class="pe-7s-angle-left pe-5x">
                         <span class="visually-hidden">Previus slider</span>
                     </span>
                 </button>
-                <button class="slides-arrow slides-arrow-right">
+            <button class="slides__arrow slides__arrow-right">
                     <span class="pe-7s-angle-right pe-5x">
                         <span class="visually-hidden">Next slider</span>
                     </span>
                 </button>
-            </div>
-        </section>
+        </div>
+    </div>
+
+    <main>
         <section class="collection">
             <div class="container">
                 <h2>New Collection</h2>
                 <ul class="collection__list clearfix">
                     <li class="collection__list-item">
-
                         <div class="collection__list-image-wrapper">
-
                             <img class="collection__list-image" src="https://i.ibb.co/MCpDG2c/blue-tshirt.jpg" alt="Photo of man tshirt with cool print, color blue" width="255" height="283">
-
                             <div class="overlay">
                                 <ul class="overlay__icon clearfix">
                                     <li class="overlay__icon-item">
@@ -100,7 +99,7 @@
                                     <li class="overlay__icon-item">
                                         <button class="overlay__icon-btn overlay__icon-text">
                                         <span class="pe-7s-cart pe-2x"></span>
-                                        <span>&ensp;&ensp;&ensp;Add to cart</span>
+                                        <span>Add to cart</span>
                                     </button>
                                     </li>
                                 </ul>
@@ -112,43 +111,132 @@
                                 <p class="collection__sale-price">&#36;26</p>
                             </a>
                         </div>
-
                     </li>
                     <li class="collection__list-item">
-
-                        <img class="collection__list-image" src="https://i.ibb.co/52B8c5T/womam-shirt.jpg" alt="Photo of style woman shirt" width="255" height="283">
-
+                        <div class="collection__list-image-wrapper">
+                            <img class="collection__list-image" src="https://i.ibb.co/52B8c5T/womam-shirt.jpg" alt="Photo of style woman shirt" width="255" height="283">
+                            <div class="overlay">
+                                <ul class="overlay__icon clearfix">
+                                    <li class="overlay__icon-item">
+                                        <button class="overlay__icon-btn">
+                                        <span class="pe-7s-like pe-2x">
+                                            <span class="visually-hidden">Like</span>
+                                        </span>
+                                    </button>
+                                    </li>
+                                    <li class="overlay__icon-item">
+                                        <button class="overlay__icon-btn">
+                                        <span class="pe-7s-shuffle pe-2x">
+                                            <span class="visually-hidden">Shuffle</span>
+                                        </span>
+                                    </button>
+                                    </li>
+                                    <li class="overlay__icon-item">
+                                        <button class="overlay__icon-btn">
+                                        <span class="pe-7s-clock pe-2x">
+                                            <span class="visually-hidden">Clock</span>
+                                        </span>
+                                    </button>
+                                    </li>
+                                    <li class="overlay__icon-item">
+                                        <button class="overlay__icon-btn overlay__icon-text">
+                                        <span class="pe-7s-cart pe-2x"></span>
+                                        <span>Add to cart</span>
+                                    </button>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
                         <div class="collection__list-sale">
                             <a href="#">
                                 <h3 class="collection__sale-title">Woman Shirt</h3>
                                 <p class="collection__sale-price">&#36;31</p>
                             </a>
                         </div>
-
                     </li>
                     <li class="collection__list-item">
-
-                        <img class="collection__list-image" src="https://i.ibb.co/0nqz2Qy/yellow-tshirt.jpg" alt="Photo of man tshirt, color yellow" width="255" height="283">
-
+                        <div class="collection__list-image-wrapper">
+                            <img class="collection__list-image" src="https://i.ibb.co/0nqz2Qy/yellow-tshirt.jpg" alt="Photo of man tshirt, color yellow" width="255" height="283">
+                            <div class="overlay">
+                                <ul class="overlay__icon clearfix">
+                                    <li class="overlay__icon-item">
+                                        <button class="overlay__icon-btn">
+                                        <span class="pe-7s-like pe-2x">
+                                            <span class="visually-hidden">Like</span>
+                                        </span>
+                                    </button>
+                                    </li>
+                                    <li class="overlay__icon-item">
+                                        <button class="overlay__icon-btn">
+                                        <span class="pe-7s-shuffle pe-2x">
+                                            <span class="visually-hidden">Shuffle</span>
+                                        </span>
+                                    </button>
+                                    </li>
+                                    <li class="overlay__icon-item">
+                                        <button class="overlay__icon-btn">
+                                        <span class="pe-7s-clock pe-2x">
+                                            <span class="visually-hidden">Clock</span>
+                                        </span>
+                                    </button>
+                                    </li>
+                                    <li class="overlay__icon-item">
+                                        <button class="overlay__icon-btn overlay__icon-text">
+                                        <span class="pe-7s-cart pe-2x"></span>
+                                        <span>Add to cart</span>
+                                    </button>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
                         <div class="collection__list-sale">
                             <a href="#">
                                 <h3 class="collection__sale-title">Yellow Tshirt</h3>
                                 <p class="collection__sale-price">&#36;21</p>
                             </a>
                         </div>
-
                     </li>
                     <li class="collection__list-item">
-
-                        <img class="collection__list-image" src="https://i.ibb.co/sgJtjsk/cool-lingerie.jpg" alt="Photo of cool woman lingerie" width="255" height="283">
-
+                        <div class="collection__list-image-wrapper">
+                            <img class="collection__list-image" src="https://i.ibb.co/sgJtjsk/cool-lingerie.jpg" alt="Photo of cool woman lingerie" width="255" height="283">
+                            <div class="overlay">
+                                <ul class="overlay__icon clearfix">
+                                    <li class="overlay__icon-item">
+                                        <button class="overlay__icon-btn">
+                                        <span class="pe-7s-like pe-2x">
+                                            <span class="visually-hidden">Like</span>
+                                        </span>
+                                    </button>
+                                    </li>
+                                    <li class="overlay__icon-item">
+                                        <button class="overlay__icon-btn">
+                                        <span class="pe-7s-shuffle pe-2x">
+                                            <span class="visually-hidden">Shuffle</span>
+                                        </span>
+                                    </button>
+                                    </li>
+                                    <li class="overlay__icon-item">
+                                        <button class="overlay__icon-btn">
+                                        <span class="pe-7s-clock pe-2x">
+                                            <span class="visually-hidden">Clock</span>
+                                        </span>
+                                    </button>
+                                    </li>
+                                    <li class="overlay__icon-item">
+                                        <button class="overlay__icon-btn overlay__icon-text">
+                                        <span class="pe-7s-cart pe-2x"></span>
+                                        <span>Add to cart</span>
+                                    </button>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
                         <div class="collection__list-sale">
                             <a href="#">
                                 <h3 class="collection__sale-title">Cool lingerie</h3>
                                 <p class="collection__sale-price">&#36;56</p>
                             </a>
                         </div>
-
                     </li>
                 </ul>
             </div>
