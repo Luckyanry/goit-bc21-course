@@ -42,7 +42,7 @@ a {
     display: flex;
     align-items: baseline;
     justify-content: space-between;
-    padding: 26px 0;
+    padding: 26px 0 132px;
 }
 
 .navigation a {
@@ -94,6 +94,10 @@ a {
 
 /* SERVICES SECTION */
 
+.services {
+    padding-bottom: 98px;
+}
+
 h2 {
     font-weight: 700;
     text-transform: uppercase;
@@ -126,9 +130,44 @@ h2::after {
 }
 
 .services_list-item {
-    padding-left: 80px;
+    position: relative;
+    padding: 0 3px 0 80px;
     max-width: 380px;
-    border: 1px solid red;
+}
+
+.services_list-item::before {
+    display: block;
+    position: absolute;
+    left: 20px;
+    content: '';
+    width: 32px;
+    height: 32px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.icon-alarm::before {
+    background-image: url(../img/services/alarm.png);
+}
+
+.icon-linegraph::before {
+    background-image: url(../img/services/linegraph.png);
+}
+
+.icon-computer::before {
+    background-image: url(../img/services/computer.png);
+}
+
+.icon-book::before {
+    background-image: url(../img/services/book.png);
+}
+
+.icon-home::before {
+    background-image: url(../img/services/home.png);
+}
+
+.icon-image::before {
+    background-image: url(../img/services/image.png);
 }
 
 .services_list-item:not(:nth-last-child(-n+3)) {
@@ -146,7 +185,182 @@ p {
     font-family: 'Roboto', sans-serif;
     font-size: 15px;
     font-weight: 400;
+    line-height: 24px;
     color: #999999;
+}
+
+
+/* TEAM SECTION */
+
+.team {
+    padding-bottom: 80px;
+}
+
+.team_text {
+    max-width: 978px;
+    text-align: center;
+    margin: 0 auto 90px;
+}
+
+.team_list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.team_list-about {
+    width: max-content;
+    text-align: center;
+}
+
+.team_about-image {
+    width: 380px;
+    height: 470px;
+    margin-bottom: 30px;
+}
+
+.team_about-name {
+    margin-bottom: 14px;
+}
+
+.team_about-position {
+    font-family: 'Roboto', sans-serif;
+    font-style: italic;
+    font-weight: 300;
+    line-height: 24px;
+    text-transform: none;
+    color: #999999;
+}
+
+
+/* .Rectangle_14 {
+    background-image: -moz-linear-gradient( 90deg, rgb(252, 227, 138) 0%, rgb(243, 129, 129) 100%);
+    background-image: -webkit-linear-gradient( 90deg, rgb(252, 227, 138) 0%, rgb(243, 129, 129) 100%);
+    background-image: -ms-linear-gradient( 90deg, rgb(252, 227, 138) 0%, rgb(243, 129, 129) 100%);
+    position: absolute;
+    left: 350px;
+    top: 970px;
+    width: 380px;
+    height: 470px;
+    z-index: 19;
+}
+
+.Rectangle_14_copy {
+    background-color: rgb(149, 225, 211);
+    position: absolute;
+    left: 360px;
+    top: 980px;
+    width: 380px;
+    height: 470px;
+    z-index: 18;
+}
+
+.Rectangle_15 {
+    background-color: rgb(252, 227, 138);
+    position: absolute;
+    left: 428px;
+    top: 1177px;
+    width: 224px;
+    height: 56px;
+    z-index: 22;
+}
+
+.Rectangle_16 {
+    background-color: rgb(243, 129, 129);
+    position: absolute;
+    left: 428px;
+    top: 1177px;
+    width: 56px;
+    height: 56px;
+    z-index: 23;
+}
+
+.Shape_3_copy {
+    background-color: rgb(243, 129, 129);
+    opacity: 0.502;
+    position: absolute;
+    left: 483px;
+    top: 1177px;
+    width: 1px;
+    height: 56px;
+    z-index: 24;
+} */
+
+
+/* FOOTER */
+
+.footer {
+    padding-bottom: 10px;
+}
+
+.footer_flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer_topline::before {
+    display: block;
+    content: '';
+    max-width: 1200px;
+    height: 1px;
+    margin-bottom: 12px;
+    background-color: #e5e5e5;
+}
+
+.footer_copyright {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    color: #333333;
+}
+
+.footer_link {
+    display: inline-block;
+    text-transform: none;
+    color: #95e1d3;
+}
+
+.footer_link:hover,
+.footer_link:focus {
+    color: #f38181;
+}
+
+.subscribe-form {
+    display: flex;
+}
+
+.subscribe-form_input {
+    width: 230px;
+    height: 40px;
+    border: 1px solid #e7e7e7;
+    border-right: transparent;
+}
+
+input[placeholder]::-webkit-input-placeholder {
+    font-family: 'Roboto', sans-serif;
+    font-style: italic;
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 24px;
+    color: #cccccc;
+    padding-left: 12px;
+}
+
+
+/* input[type="search"]::-webkit-input-placeholder {
+    color: red;
+} */
+
+.subscribe-form_btn {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    color: #ffffff;
+    width: 150px;
+    height: 40px;
+    border: none;
+    background-color: #95e1d3;
+    cursor: pointer;
 }
 
 
