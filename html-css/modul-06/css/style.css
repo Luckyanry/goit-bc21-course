@@ -65,7 +65,7 @@ a {
     display: block;
     width: 100%;
     height: 3px;
-    margin: 10px 0 0;
+    margin-top: 10px;
     background-color: #f38181;
     visibility: hidden;
     opacity: 0;
@@ -136,9 +136,9 @@ h2::after {
 }
 
 .services_list-item::before {
-    display: block;
     position: absolute;
     left: 20px;
+    display: block;
     content: '';
     width: 32px;
     height: 32px;
@@ -208,14 +208,83 @@ p {
 }
 
 .team_list-about {
-    width: max-content;
+    max-width: 380px;
     text-align: center;
 }
 
+.team_list-about_wrapper {
+    position: relative;
+}
+
+.team_list-about_wrapper:hover .overlay {
+    transform: translate(-10px, -10px);
+    transition: all linear 0.2s;
+    box-shadow: 10px 10px #95e1d3;
+    visibility: visible;
+    opacity: 1;
+}
+
+.team_list-about_wrapper:hover .team_about-image {
+    transform: translate(-10px, -10px);
+    transition: all linear 0.2s;
+}
+
 .team_about-image {
-    width: 380px;
-    height: 470px;
     margin-bottom: 30px;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(0deg, rgba(252, 227, 138, 0.9) 0%, rgba(243, 129, 129, 0.9) 100%);
+    visibility: hidden;
+    opacity: 0;
+}
+
+.overlay_list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 470px;
+}
+
+.overlay_list-item {
+    width: 56px;
+    background-color: #fce38a;
+}
+
+.overlay_list-item:not(:last-child) {
+    border: none;
+    border-right: 1px solid rgba(243, 129, 129, 0.5);
+}
+
+.overlay_list-link {
+    width: 56px;
+    height: 56px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.icon-facebook {
+    background-image: url(../img/team/facebook.png);
+}
+
+.icon-twitter {
+    background-image: url(../img/team/twitter.png);
+}
+
+.icon-pinterest {
+    background-image: url(../img/team/pinterest.png);
+}
+
+.icon-instagram {
+    background-image: url(../img/team/instagram.png);
+}
+
+.overlay_list-link:hover {
+    background-color: #95e1d3;
 }
 
 .team_about-name {
@@ -230,60 +299,6 @@ p {
     text-transform: none;
     color: #999999;
 }
-
-
-/* .Rectangle_14 {
-    background-image: -moz-linear-gradient( 90deg, rgb(252, 227, 138) 0%, rgb(243, 129, 129) 100%);
-    background-image: -webkit-linear-gradient( 90deg, rgb(252, 227, 138) 0%, rgb(243, 129, 129) 100%);
-    background-image: -ms-linear-gradient( 90deg, rgb(252, 227, 138) 0%, rgb(243, 129, 129) 100%);
-    position: absolute;
-    left: 350px;
-    top: 970px;
-    width: 380px;
-    height: 470px;
-    z-index: 19;
-}
-
-.Rectangle_14_copy {
-    background-color: rgb(149, 225, 211);
-    position: absolute;
-    left: 360px;
-    top: 980px;
-    width: 380px;
-    height: 470px;
-    z-index: 18;
-}
-
-.Rectangle_15 {
-    background-color: rgb(252, 227, 138);
-    position: absolute;
-    left: 428px;
-    top: 1177px;
-    width: 224px;
-    height: 56px;
-    z-index: 22;
-}
-
-.Rectangle_16 {
-    background-color: rgb(243, 129, 129);
-    position: absolute;
-    left: 428px;
-    top: 1177px;
-    width: 56px;
-    height: 56px;
-    z-index: 23;
-}
-
-.Shape_3_copy {
-    background-color: rgb(243, 129, 129);
-    opacity: 0.502;
-    position: absolute;
-    left: 483px;
-    top: 1177px;
-    width: 1px;
-    height: 56px;
-    z-index: 24;
-} */
 
 
 /* FOOTER */
@@ -334,7 +349,7 @@ p {
     border-right: transparent;
 }
 
-input[placeholder]::-webkit-input-placeholder {
+input[placeholder]::placeholder {
     font-family: 'Roboto', sans-serif;
     font-style: italic;
     font-size: 15px;
@@ -343,11 +358,6 @@ input[placeholder]::-webkit-input-placeholder {
     color: #cccccc;
     padding-left: 12px;
 }
-
-
-/* input[type="search"]::-webkit-input-placeholder {
-    color: red;
-} */
 
 .subscribe-form_btn {
     font-family: 'Montserrat', sans-serif;
