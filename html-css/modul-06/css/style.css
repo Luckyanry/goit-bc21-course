@@ -57,6 +57,7 @@ a {
 
 .navigation_list {
     display: flex;
+    flex-wrap: wrap;
 }
 
 .navigation_list-link::after {
@@ -310,6 +311,7 @@ p {
 .footer_flex {
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .footer_topline::before {
