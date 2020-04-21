@@ -80,7 +80,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 44px 0 120px;
+    padding: 46px 0 110px;
 }
 
 .navigation_list {
@@ -89,13 +89,14 @@ body {
 }
 
 .navigation_list-item:not(:last-child) {
-    margin-right: 40px;
+    margin-right: 38px;
 }
 
 .navigation_list-link {
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
     font-size: 14px;
+    letter-spacing: 0.3px;
     color: #222222;
 }
 
@@ -108,23 +109,25 @@ body {
 /* SERVICES SECTION */
 
 .services {
-    padding-bottom: 120px;
+    padding-bottom: 115px;
 }
 
 h2 {
     font-size: 40px;
     font-weight: 700;
+    letter-spacing: -1.8px;
     text-transform: uppercase;
     text-align: center;
-    margin-bottom: 16px;
+    margin-bottom: 8px;
 }
 
 .section-about {
     font-family: 'Aleo';
     font-style: italic;
     font-size: 16px;
+    letter-spacing: 0.65px;
     text-transform: none;
-    margin-bottom: 70px;
+    margin-bottom: 74px;
 }
 
 .services_list {
@@ -136,7 +139,7 @@ h2 {
 .services_list-item {
     position: relative;
     max-width: 290px;
-    padding-top: 92px;
+    padding-top: 95px;
 }
 
 .services_list-item::before {
@@ -165,21 +168,17 @@ h2 {
     background-image: url(../img/icons/locked.png);
 }
 
-.services_list-item:not(:nth-last-child(-n+3)) {
-    margin-bottom: 98px;
-}
-
 h3 {
     font-size: 18px;
     text-align: center;
-    margin-bottom: 18px;
+    margin-bottom: 9px;
 }
 
 p {
     font-family: 'Roboto Slab', serif;
     font-size: 14px;
     font-weight: 400;
-    line-height: 24px;
+    line-height: 23px;
     text-align: center;
     color: #777777;
 }
@@ -192,7 +191,7 @@ p {
     background-color: rgb(34, 34, 34);
     background-repeat: no-repeat;
     background-position: right 126px;
-    padding: 104px 0 115px;
+    padding: 102px 0 115px;
 }
 
 .contact-title {
