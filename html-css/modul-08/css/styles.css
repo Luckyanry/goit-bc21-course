@@ -72,6 +72,10 @@ body {
     padding: 22px 0 138px;
 }
 
+.nav {
+    margin-bottom: 110px;
+}
+
 .nav__logo-link {
     display: none;
 }
@@ -86,10 +90,6 @@ body {
     border: none;
     background-color: transparent;
     color: #ffffff;
-}
-
-.nav {
-    margin-bottom: 110px;
 }
 
 .nav__btn:hover,
@@ -160,20 +160,21 @@ h2 {
 
 .team__list__inner {
     position: relative;
-    margin-bottom: 21px;
+    width: 123px;
+    height: 123px;
+    margin: 0 auto 21px;
 }
 
 .team__list-photo {
-    width: 123px;
-    height: 123px;
+    width: 100%;
     border-radius: 50%;
     margin: 0 auto;
 }
 
 .team__list__inner::before {
     position: absolute;
-    bottom: -2%;
-    right: 30%;
+    bottom: 0;
+    right: 0;
     content: '';
     width: 37px;
     height: 37px;
