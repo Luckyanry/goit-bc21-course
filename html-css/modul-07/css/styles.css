@@ -1,7 +1,7 @@
 /* montserrat-regular - latin */
 
 @font-face {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Montserrat';
     font-style: normal;
     font-weight: 400;
     src: local('Montserrat Regular'), local('Montserrat-Regular'), url('../fonts/montserrat-v14-latin-regular.woff2') format('woff2'), url('../fonts/montserrat-v14-latin-regular.woff') format('woff');
@@ -11,17 +11,17 @@
 /* montserrat-700 - latin */
 
 @font-face {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Montserrat';
     font-style: normal;
     font-weight: 700;
-    src: local('Montserrat Bold'), local('Montserrat-Bold'), url('../fonts/montserrat-v14-latin-700.woff2') format('woff2'), url('../fonts/montserrat-v14-latin-700.woff') format('woff');
+    src: url('../fonts/montserrat-v14-latin-700.woff2') format('woff2'), url('../fonts/montserrat-v14-latin-700.woff') format('woff');
 }
 
 
 /* roboto-slab-regular - latin */
 
 @font-face {
-    font-family: 'Roboto Slab', serif;
+    font-family: 'Roboto Slab';
     font-style: normal;
     font-weight: 400;
     src: url('../fonts/roboto-slab-v11-latin-regular.woff2') format('woff2'), url('../fonts/roboto-slab-v11-latin-regular.woff') format('woff');
@@ -31,7 +31,7 @@
 /* aleo-italic - latin */
 
 @font-face {
-    font-family: 'Aleo', serif;
+    font-family: 'Aleo';
     font-style: italic;
     font-weight: 400;
     src: local('Aleo Italic'), local('Aleo-Italic'), url('../fonts/aleo-v3-latin-italic.woff2') format('woff2'), url('../fonts/aleo-v3-latin-italic.woff') format('woff');
@@ -137,16 +137,11 @@ h2 {
 }
 
 .services_list-item {
-    position: relative;
     max-width: 290px;
-    padding-top: 95px;
 }
 
 .services_list-item::before {
-    position: absolute;
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%);
+    display: block;
     content: '';
     width: 72px;
     height: 72px;
@@ -154,6 +149,7 @@ h2 {
     border-radius: 50%;
     background-repeat: no-repeat;
     background-position: center;
+    margin: 0 auto 22px;
 }
 
 .icon-basket::before {
@@ -208,11 +204,15 @@ p {
     margin-bottom: 30px;
 }
 
+.user__about-input,
+.user__text-message {
+    width: calc(50% - 15px);
+}
+
 .user__about-input {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    width: 457px;
 }
 
 .user__text-input__form {
@@ -222,7 +222,6 @@ p {
 }
 
 .user__text-message {
-    height: 212px;
     resize: none;
     border-radius: 5px;
     padding: 20px;
@@ -230,9 +229,12 @@ p {
 
 .user__text-input__form,
 .user__text-message {
-    width: 457px;
     border: 1px solid #cccccc;
     background-color: #ffffff;
+}
+
+.user__text-input__form:not(:last-child) {
+    margin-bottom: 28px;
 }
 
 .user__text-input__form:focus,
