@@ -60,7 +60,7 @@ body {
 }
 
 .menu {
-    width: 100%;
+    min-width: 320px;
     height: 100%;
     background-image: url(../img/header-img.png);
     background-color: #1a1915;
@@ -69,14 +69,14 @@ body {
     background-size: cover;
     color: #ffffff;
     text-align: center;
-    padding: 20px 0 138px;
+    padding: 22px 0 138px;
 }
 
 .nav__logo-link {
     display: none;
 }
 
-.nav-btn {
+.nav__btn {
     width: 94px;
     height: 40px;
     font-family: "Montserrat", sans-serif;
@@ -89,25 +89,25 @@ body {
 }
 
 .nav {
-    margin-bottom: 118px;
+    margin-bottom: 110px;
 }
 
-.nav-btn:hover,
-.nav-btn:focus {
+.nav__btn:hover,
+.nav__btn:focus {
     border: 2px solid #ffffff;
-    border-radius: 20px;
+    border-radius: 18px;
 }
 
-.menu-about__logo {
+.menu__logo {
     font-size: 20px;
     text-transform: uppercase;
-    margin-bottom: 34px;
+    margin-bottom: 30px;
 }
 
 h1 {
     font-size: 30px;
     text-transform: uppercase;
-    margin-bottom: 16px;
+    margin: 0 0 14px;
 }
 
 p {
@@ -115,10 +115,10 @@ p {
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
     font-size: 18px;
-    margin: 0 auto 18px;
+    margin: 0 auto 20px;
 }
 
-.menu-about_link {
+.menu__link {
     width: 280px;
     height: 40px;
     font-size: 14px;
@@ -128,10 +128,106 @@ p {
     margin: 0 auto;
 }
 
-.menu-about_link:hover,
-.menu-about_link:focus {
+.menu__link:hover,
+.menu__link:focus {
     line-height: 36px;
     border: 2px solid #ff4e50;
     background-color: #ffffff;
     color: #ff4e50;
+}
+
+
+/* TEAM SECTION */
+
+.team {
+    text-align: center;
+    color: #333333;
+    padding: 72px 0 58px;
+}
+
+h2 {
+    font-size: 22px;
+    margin-bottom: 18px;
+}
+
+.team__list {
+    margin-bottom: 28px;
+}
+
+.team__list-item:not(:last-child) {
+    margin-bottom: 28px;
+}
+
+.team__list__inner {
+    position: relative;
+    margin-bottom: 21px;
+}
+
+.team__list-photo {
+    width: 123px;
+    height: 123px;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+
+.team__list__inner::before {
+    position: absolute;
+    bottom: -2%;
+    right: 30%;
+    content: '';
+    width: 37px;
+    height: 37px;
+    border-radius: 50%;
+    border: 4px solid #ffffff;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.img__icon-tv::before {
+    background-color: #ff4e50;
+    background-image: url(../img/team/icon-tv.png);
+}
+
+.img__icon-flask::before {
+    background-color: #ffa507;
+    background-image: url(../img/team/icon-flask.png);
+}
+
+.img__icon-coffe::before {
+    content: '';
+    background-color: #1cd7ad;
+    background-image: url(../img/team/icon-coffe.png);
+}
+
+.img__icon-telegram::before {
+    background-color: #4e73db;
+    background-image: url(../img/team/icon-telegram.png);
+}
+
+h3 {
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.team__list-about {
+    font-size: 14px;
+    color: #666666;
+}
+
+.team__link {
+    width: 284px;
+    height: 44px;
+    line-height: 40px;
+    border-radius: 20px;
+    border: 2px solid #ff4e50;
+    background-color: rgb(255, 255, 255);
+    color: #ff4e50;
+    margin: 0 auto;
+}
+
+.team__link:hover,
+.team__link:focus {
+    line-height: 40px;
+    background-color: #ff4e50;
+    color: #ffffff;
 }
