@@ -95,7 +95,7 @@ body {
 .nav__btn:hover,
 .nav__btn:focus {
     border: 2px solid #ffffff;
-    border-radius: 18px;
+    border-radius: 20px;
 }
 
 .menu__logo {
@@ -111,11 +111,14 @@ h1 {
 }
 
 p {
-    width: 220px;
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
+}
+
+.menu__text {
     font-size: 18px;
     margin: 0 auto 20px;
+    padding: 0 44px;
 }
 
 .menu__link {
@@ -153,8 +156,8 @@ h2 {
     margin-bottom: 28px;
 }
 
-.team__list-item:not(:last-child) {
-    margin-bottom: 28px;
+.team__list-item {
+    width: 236px;
 }
 
 .team__list__inner {
@@ -212,6 +215,7 @@ h3 {
 .team__list-about {
     font-size: 14px;
     color: #666666;
+    padding: 0 10px;
 }
 
 .team__link {
@@ -229,4 +233,78 @@ h3 {
     line-height: 40px;
     background-color: #ff4e50;
     color: #ffffff;
+}
+
+@media (max-width: 767px) {
+    .team__list-item {
+        margin: 0 auto;
+    }
+    .team__list-item:not(:last-child) {
+        margin-bottom: 28px;
+    }
+}
+
+@media (min-width: 768px) {
+    .menu {
+        padding: 38px 0 234px;
+        background-image: url(../img/header-img-md.png);
+    }
+    .container {
+        width: 680px;
+    }
+    .nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 148px;
+    }
+    .nav__logo-link {
+        display: block;
+    }
+    .nav__btn-inner {
+        display: flex;
+        letter-spacing: 1px;
+    }
+    .menu__logo {
+        display: none;
+    }
+    h1 {
+        font-size: 52px;
+        margin: 0 0 34px;
+        padding: 0 30px;
+    }
+    .menu__text {
+        font-size: 24px;
+        margin: 0 auto 34px;
+    }
+    .menu__link {
+        width: 226px;
+    }
+    /* TEAM SECTION */
+    .team {
+        padding: 72px 0 57px;
+    }
+    .team-conteiner {
+        width: 492px;
+    }
+    h2 {
+        margin-bottom: 34px;
+    }
+    .team__list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-bottom: 36px;
+    }
+    .team__list-item {
+        display: flex;
+        flex-direction: column;
+    }
+    .team__list-item:not(:nth-last-child(-n+2)) {
+        margin-bottom: 56px;
+    }
+    .list-item__flask,
+    .list-item__telegram {
+        order: 1;
+    }
 }
