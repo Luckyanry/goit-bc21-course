@@ -166,7 +166,6 @@ h2 {
 .team__list-photo {
     width: 100%;
     border-radius: 50%;
-    margin: 0 auto;
 }
 
 .team__list__inner::before {
@@ -193,7 +192,6 @@ h2 {
 }
 
 .img__icon-coffe::before {
-    content: '';
     background-color: #1cd7ad;
     background-image: url(../img/team/icon-coffe.png);
 }
