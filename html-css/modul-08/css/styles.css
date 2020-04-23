@@ -304,8 +304,8 @@ h3 {
     }
 }
 
-@media (max-width:1023px) {
-    .team__list-item:not(:nth-last-child(2n)) {
+@media (max-width: 1023px) {
+    .team__list-item:not(:nth-child(-2n+4)) {
         margin-bottom: 56px;
     }
 }
