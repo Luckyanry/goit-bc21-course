@@ -1,17 +1,9 @@
-/* montserrat-700 - latin */
-
 @font-face {
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 700;
     src: url('../fonts/montserrat-v14-latin-700.woff2') format('woff2'), url('../fonts/montserrat-v14-latin-700.woff') format('woff');
 }
-
-
-/* montserrat-300 - latin */
-
-
-/* roboto-300 - latin */
 
 @font-face {
     font-family: 'Roboto';
@@ -107,7 +99,11 @@ body {
 h1 {
     font-size: 30px;
     text-transform: uppercase;
-    margin: 0 0 14px;
+    margin-bottom: 14px;
+}
+
+.menu__title {
+    display: block;
 }
 
 p {
@@ -221,7 +217,7 @@ h3 {
 .team__link {
     width: 284px;
     line-height: 40px;
-    border-radius: 20px;
+    border-radius: 22px;
     border: 2px solid #ff4e50;
     background-color: rgb(255, 255, 255);
     color: #ff4e50;
@@ -270,8 +266,7 @@ h3 {
     }
     h1 {
         font-size: 52px;
-        margin: 0 0 34px;
-        padding: 0 30px;
+        margin-bottom: 34px;
     }
     .menu__text {
         font-size: 24px;
@@ -282,7 +277,7 @@ h3 {
     }
     /* TEAM SECTION */
     .team {
-        padding: 72px 0 57px;
+        padding-bottom: 40px;
     }
     .team-conteiner {
         width: 492px;
@@ -300,11 +295,35 @@ h3 {
         display: flex;
         flex-direction: column;
     }
-    .team__list-item:not(:nth-last-child(-n+2)) {
-        margin-bottom: 56px;
-    }
     .list-item__flask,
     .list-item__telegram {
         order: 1;
+    }
+    .team__link {
+        width: 192px;
+    }
+}
+
+@media (max-width:1023px) {
+    .team__list-item:not(:nth-last-child(2n)) {
+        margin-bottom: 56px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .menu {
+        background-image: url(../img/header-img-lg.png);
+    }
+    .container {
+        width: 944px;
+    }
+    .team {
+        padding-bottom: 72px;
+    }
+    .team__list-item {
+        width: 220px;
+    }
+    .team__list-about {
+        padding: 0 2px;
     }
 }
