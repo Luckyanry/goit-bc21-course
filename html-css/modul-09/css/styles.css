@@ -242,9 +242,6 @@ h3 {
     .team__list-item:not(:nth-child(-2n+4)) {
         margin-bottom: 56px;
     }
-    .team__list-about {
-        padding: 0 26px;
-    }
 }
 
 @media (min-width: 768px) {
@@ -263,7 +260,6 @@ h3 {
         font-size: 24px;
         margin: 0 auto 34px;
     }
-    /* TEAM SECTION */
     .team {
         padding-bottom: 40px;
     }
@@ -273,11 +269,16 @@ h3 {
     .team__list {
         margin-bottom: 36px;
     }
-    .list-item__flask,
-    .list-item__telegram {
-        order: 1;
-    }
     .team__link {
         width: 192px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .menu {
+        background-image: url(../img/header-img-lg.png);
+    }
+    .team {
+        padding-bottom: 72px;
     }
 }
