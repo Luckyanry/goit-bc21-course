@@ -36,17 +36,126 @@ ul {
 
 a {
     display: block;
-    height: 100%;
+    height: auto;
     text-decoration: none;
     color: #ffffff;
-}
-
-.container {
-    width: 320px;
-    margin: 0 auto;
 }
 
 body {
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
+}
+
+.menu {
+    min-width: 320px;
+    height: 100%;
+    background-image: url(../img/header-img.png);
+    background-color: #1a1915;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #ffffff;
+    text-align: center;
+    padding: 22px 0 138px;
+}
+
+.nav__btn-inner {
+    margin-bottom: 110px;
+}
+
+.nav__logo-inner {
+    margin-bottom: 30px;
+}
+
+.nav__logo-link {
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+.nav__btn {
+    width: 94px;
+    height: 40px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    text-align: center;
+    border: none;
+    background-color: transparent;
+    color: #ffffff;
+}
+
+.nav__btn:hover,
+.nav__btn:focus {
+    border: 2px solid #ffffff;
+    border-radius: 20px;
+}
+
+h1 {
+    width: max-content;
+    font-size: 30px;
+    text-transform: uppercase;
+    margin: 0 auto 14px;
+}
+
+.menu__title {
+    display: block;
+}
+
+p {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+}
+
+.menu__text {
+    font-size: 18px;
+    margin: 0 auto 20px;
+    padding: 0 28px;
+}
+
+.menu__link {
+    width: 280px;
+    font-size: 14px;
+    line-height: 40px;
+    border-radius: 20px;
+    background-color: #ff4e50;
+    margin: 0 auto;
+}
+
+.menu__link:hover,
+.menu__link:focus {
+    line-height: 36px;
+    border: 2px solid #ff4e50;
+    background-color: #ffffff;
+    color: #ff4e50;
+}
+
+@media (min-width: 768px) {
+    .menu {
+        padding: 38px 0 234px;
+        background-image: url(../img/header-img-md.png);
+    }
+    .nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 148px;
+    }
+    .nav__btn-inner {
+        display: flex;
+        letter-spacing: 1px;
+    }
+    .menu__logo {
+        display: none;
+    }
+    h1 {
+        font-size: 52px;
+        margin-bottom: 34px;
+    }
+    .menu__text {
+        font-size: 24px;
+        margin: 0 auto 34px;
+    }
+    .menu__link {
+        width: 226px;
+    }
 }
