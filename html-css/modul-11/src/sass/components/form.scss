@@ -28,3 +28,8 @@ input::placeholder {
   height: 40px;
   background-color: #95e1d3;
 }
+
+.subscribe-form__btn:hover,
+.subscribe-form__btn:focus {
+  background-color: #f38181;
+}
