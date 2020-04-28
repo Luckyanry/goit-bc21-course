@@ -1,5 +1,9 @@
 .header {
-  background-image: linear-gradient( 0deg, rgba(252, 227, 138, .9) 0%, rgba(243, 129, 129, .9) 100%), url("../img/header/bg.jpg");
+  background-image: linear-gradient(
+    0deg,
+    transparentize($main-color, 0.1) 0%,
+    transparentize($secondary-color, 0.1) 100%),
+    url("../images/header/bg.jpg");
   background-position: center;
   background-size: cover;
   padding: 26px 0 230px;
@@ -43,7 +47,7 @@
   width: 100%;
   height: 100%;
   text-align: center;
-  fill: #ffffff;
+  fill: $header-text-color;
 }
 
 .site-navigation__link::after,
@@ -54,7 +58,7 @@
   width: 100%;
   height: 3px;
   margin-top: 10px;
-  background-color: #fce38a;
+  background-color: $main-color;
   visibility: hidden;
   opacity: 0;
 }
@@ -65,12 +69,12 @@
 
 .site-navigation__link:hover,
 .site-navigation__link:focus {
-  color: #fce38a;
+  color: $main-color;
 }
 
 .site-navigation__btn:hover .site-navigation__btn-icon,
 .site-navigation__btn:focus .site-navigation__btn-icon {
-  fill: #fce38a;
+  fill: $main-color;
 }
 
 .site-navigation__link:hover::after,
@@ -85,7 +89,7 @@
   font-size: 150px;
   text-align: center;
   text-transform: uppercase;
-  color: #ffffff;
+  color: $header-text-color;
   margin-bottom: 122px;
 }
 
@@ -105,20 +109,24 @@
   height: 40px;
   font-size: 14px;
   font-weight: 700;
-  color: #ffffff;
-  border: 3px solid #ffffff;
+  color: $btn-text-color;
+  border: 3px solid $header-text-color;
   background-color: transparent;
 }
 
 .header-btn:hover,
 .header-btn:focus {
-  color: #f38181;
-  border: 3px solid #f38181;
+  color: $secondary-color;
+  border: 3px solid $secondary-color;
   background-color: #ffffff;
 }
 
 @media (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .header {
-    background-image: linear-gradient( 0deg, rgba(252, 227, 138, .9) 0%, rgba(243, 129, 129, .9) 100%), url("./images/header/bg@2x.jpg");
+    background-image: linear-gradient(
+      0deg,
+      transparentize($main-color, 0.1) 0%,
+      transparentize($secondary-color, 0.1) 100%),
+      url("../images/header/bg@2x.jpg");
   }
 }

@@ -44,12 +44,12 @@
 }
 
 .team__item-ocupation {
-  font-family: 'Roboto', sans-serif;
+  font-family: $secondary-font;
   font-style: italic;
   font-weight: 300;
   line-height: 24px;
   text-transform: none;
-  color: #999999;
+  color: $desc-text-color;
 }
 
 .overlay {
@@ -57,7 +57,10 @@
   top: 0;
   width: 100%;
   height: 100%;
-  background-image: linear-gradient(0deg, rgba(252, 227, 138, 0.9) 0%, rgba(243, 129, 129, 0.9) 100%);
+  background-image: linear-gradient(
+    0deg,
+    transparentize($main-color, 0.1) 0%,
+    transparentize($secondary-color, 0.1) 100%);
   visibility: hidden;
   opacity: 0;
 }
