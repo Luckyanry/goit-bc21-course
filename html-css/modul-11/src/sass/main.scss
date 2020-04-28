@@ -3,4 +3,20 @@
  */
 
 @import 'normalize.scss';
+@import './helpers/fonts.scss';
 @import 'base.scss';
+@import './helpers/variables.scss';
+
+// COMPONENTS
+@import './components/link.scss';
+@import './components/list.scss';
+@import './components/btn.scss';
+@import './components/socials.scss';
+@import './components/form.scss';
+
+
+// SECTIONS
+@import './sections/header.scss';
+@import './sections/services.scss';
+@import './sections/team.scss';
+@import './sections/footer.scss';

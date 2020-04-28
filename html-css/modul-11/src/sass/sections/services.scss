@@ -26,27 +26,27 @@
 }
 
 .services__icon--alarm::before {
-  background-image: url(../img/services/alarm.svg);
+  background-image: url("../images/services/alarm.svg");
 }
 
 .services__icon--linegraph::before {
-  background-image: url(../img/services/linegraph.svg);
+  background-image: url("../images/services/linegraph.svg");
 }
 
 .services__icon--computer::before {
-  background-image: url(../img/services/computer.svg);
+  background-image: url("../images/services/computer.svg");
 }
 
 .services__icon--book::before {
-  background-image: url(../img/services/book.svg);
+  background-image: url("../images/services/book.svg");
 }
 
 .services__icon--home::before {
-  background-image: url(../img/services/home.svg);
+  background-image: url("../images/services/home.svg");
 }
 
 .services__icon--image::before {
-  background-image: url(../img/services/image.svg);
+  background-image: url("../images/services/image.svg");
 }
 
 .services__item:not(:nth-last-child(-n+3)) {
