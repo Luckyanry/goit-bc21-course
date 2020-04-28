@@ -1,0 +1,54 @@
+.services {
+  padding: 52px 0 98px;
+}
+
+.services__list {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.services__item {
+  position: relative;
+  padding: 0 3px 0 80px;
+  max-width: 380px;
+}
+
+.services__item::before {
+  position: absolute;
+  left: 20px;
+  display: block;
+  content: '';
+  width: 32px;
+  height: 32px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.services__icon--alarm::before {
+  background-image: url(../img/services/alarm.svg);
+}
+
+.services__icon--linegraph::before {
+  background-image: url(../img/services/linegraph.svg);
+}
+
+.services__icon--computer::before {
+  background-image: url(../img/services/computer.svg);
+}
+
+.services__icon--book::before {
+  background-image: url(../img/services/book.svg);
+}
+
+.services__icon--home::before {
+  background-image: url(../img/services/home.svg);
+}
+
+.services__icon--image::before {
+  background-image: url(../img/services/image.svg);
+}
+
+.services__item:not(:nth-last-child(-n+3)) {
+  margin-bottom: 98px;
+}

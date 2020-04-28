@@ -1,0 +1,35 @@
+.footer {
+  padding-bottom: 10px;
+}
+
+.footer__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer--topline::before {
+  display: block;
+  content: '';
+  max-width: 1200px;
+  height: 1px;
+  margin-bottom: 12px;
+  background-color: #e5e5e5;
+}
+
+.footer__copyright {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  color: #333333;
+}
+
+.footer__link {
+  display: inline-block;
+  text-transform: none;
+  color: #95e1d3;
+}
+
+.footer__link:hover,
+.footer__link:focus {
+  color: #f38181;
+}
