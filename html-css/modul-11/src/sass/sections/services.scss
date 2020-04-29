@@ -1,54 +1,54 @@
 .services {
   padding: 52px 0 98px;
-}
 
-.services__list {
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-}
+  &__list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
 
-.services__item {
-  position: relative;
-  padding: 0 3px 0 80px;
-  max-width: 380px;
-}
+  &__item {
+    position: relative;
+    padding: 0 3px 0 80px;
+    max-width: 380px;
 
-.services__item::before {
-  position: absolute;
-  left: 20px;
-  display: block;
-  content: '';
-  width: 32px;
-  height: 32px;
-  background-repeat: no-repeat;
-  background-position: center;
-}
+    &::before {
+      position: absolute;
+      left: 20px;
+      display: block;
+      content: '';
+      width: 32px;
+      height: 32px;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
 
-.services__icon--alarm::before {
-  background-image: url("../images/services/alarm.svg");
-}
+    &:not(:nth-last-child(-n+3)) {
+      margin-bottom: 98px;
+    }
+  }
 
-.services__icon--linegraph::before {
-  background-image: url("../images/services/linegraph.svg");
-}
+  &__icon--alarm::before {
+    background-image: url("../images/services/alarm.svg");
+  }
 
-.services__icon--computer::before {
-  background-image: url("../images/services/computer.svg");
-}
+  &__icon--linegraph::before {
+    background-image: url("../images/services/linegraph.svg");
+  }
 
-.services__icon--book::before {
-  background-image: url("../images/services/book.svg");
-}
+  &__icon--computer::before {
+    background-image: url("../images/services/computer.svg");
+  }
 
-.services__icon--home::before {
-  background-image: url("../images/services/home.svg");
-}
+  &__icon--book::before {
+    background-image: url("../images/services/book.svg");
+  }
 
-.services__icon--image::before {
-  background-image: url("../images/services/image.svg");
-}
+  &__icon--home::before {
+    background-image: url("../images/services/home.svg");
+  }
 
-.services__item:not(:nth-last-child(-n+3)) {
-  margin-bottom: 98px;
+  &__icon--image::before {
+    background-image: url("../images/services/image.svg");
+  }
 }
