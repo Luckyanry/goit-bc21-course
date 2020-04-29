@@ -2,11 +2,25 @@ $main-font: 'Montserrat', sans-serif;
 $secondary-font: 'Roboto', sans-serif;
 $subtitle-font: 'Kaushan Script', cursive;
 
-$main-color: #fce38a;
-$secondary-color: #f38181;
-$sub-color: #95e1d3;
-
 $main-text-color: #333333;
 $desc-text-color: #999999;
 $header-text-color: #ffffff;
 $btn-text-color: #ffffff;
+
+$main-color: #fce38a;
+$secondary-color: #f38181;
+$sub-color: #95e1d3;
+
+$gradient-color: linear-gradient(
+  0deg,
+  transparentize($main-color, 0.1) 0%,
+  transparentize($secondary-color, 0.1) 100%);
+
+$overlay-box-shadow: $sub-color;
+$socials-link-color: $secondary-color;
+$socials-bg-color: $main-color;
+$socials-bg-border-color: $secondary-color;
+$socials-hover-color: $secondary-color;
+
+$form-btn-color: $sub-color;
+$form-btn-hover-color: $secondary-color;

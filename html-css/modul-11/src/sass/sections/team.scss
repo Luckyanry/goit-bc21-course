@@ -24,12 +24,12 @@
       .overlay {
         transform: translate(-10px, -10px);
         transition: all linear 0.2s;
-        box-shadow: 10px 10px #95e1d3;
+        box-shadow: 10px 10px $overlay-box-shadow;
         visibility: visible;
         opacity: 1;
       }
 
-      &-image {
+      .team__item-image {
         transform: translate(-10px, -10px);
         transition: all linear 0.2s;
       }
@@ -44,10 +44,8 @@
     }
 
     &-ocupation {
-      font-family: $secondary-font;
+      @include font($secondary-font, 15px, 300, 24px);
       font-style: italic;
-      font-weight: 300;
-      line-height: 24px;
       text-transform: none;
       color: $desc-text-color;
     }
@@ -59,10 +57,7 @@
   top: 0;
   width: 100%;
   height: 100%;
-  background-image: linear-gradient(
-    0deg,
-    transparentize($main-color, 0.1) 0%,
-    transparentize($secondary-color, 0.1) 100%);
+  background-image: $gradient-color;
   visibility: hidden;
   opacity: 0;
 

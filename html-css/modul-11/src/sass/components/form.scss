@@ -9,27 +9,22 @@
     padding: 0 12px;
 
     &::placeholder {
-      font-family: $secondary-font;
+      @include font($secondary-font, 15px, 300, 24px);
       font-style: italic;
-      font-size: 15px;
-      font-weight: 300;
-      line-height: 24px;
       color: #cccccc;
     }
   }
 
   &__btn {
-    font-family: $main-font;
-    font-size: 14px;
-    font-weight: 700;
+    @include font($main-font, 14px, 700);
     color: $btn-text-color;
     width: 150px;
     height: 40px;
-    background-color: $sub-color;
+    background-color: $form-btn-color;
 
     &:hover,
     &:focus {
-      background-color: $secondary-color;
+      background-color: $form-btn-hover-color;
     }
   }
 }

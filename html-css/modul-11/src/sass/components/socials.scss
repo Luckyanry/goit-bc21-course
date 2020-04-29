@@ -9,19 +9,19 @@
     align-items: center;
     width: 56px;
     height: 56px;
-    background-color: $main-color;
+    background-color: $socials-bg-color;
   }
 
   &__icon {
     display: inline-block;
     width: 26px;
     height: 26px;
-    fill: $secondary-color;
+    fill: $socials-link-color;
   }
 
   &__item:hover {
     .socials__link {
-      background-color: $secondary-color;
+      background-color: $socials-hover-color;
       transition: all linear 0.2s;
     }
 
@@ -33,6 +33,6 @@
 
   &__item:not(:last-child) {
     border: none;
-    border-right: 1px solid transparentize($secondary-color, 0.5);
+    border-right: 1px solid transparentize($socials-bg-border-color, 0.5);
   }
 }
